@@ -1,25 +1,21 @@
-console.log('Привет');
+'use strict';
 
-let num = 50;
-//
-// while (num < 55) {
-//     num++;
-//   console.log(num);
-// }
-// console.log('Привет');
+let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?","");
 
+let personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
 
-//
-// do {
-//   num++;
-// console.log(num);
-// } while (num < 55);
+let task1 = prompt("Один из последних просмотренных фильмов",""),
+    task2 = prompt("Насколько оцените его?",""),
+    task3 = prompt("Один из последних просмотренных фильмов",""),
+    task4 = prompt("Насколько оцените его?","");
 
+personalMovieDB.movies [task1] = task2;
+personalMovieDB.movies [task3] = task4;
 
-
-for (let i = 3; i < 9; i+3) {
-  if (i===10) {
-    break;
-  }
-  console.log(i);
-}
+console.log(personalMovieDB);
