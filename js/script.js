@@ -20,7 +20,6 @@ let num = 50;
 for (let i = 3; i < 9; i+3) {
   if (i===10) {
     break;
-
   }
   console.log(i);
 }
